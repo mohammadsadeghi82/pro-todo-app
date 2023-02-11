@@ -1,0 +1,133 @@
+:root {
+    --gray: #d2d4da;
+    --white: #f3f4f8;
+    --semi-black: #404252;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--semi-black);
+    position: relative;
+}
+
+.todo {
+    width: 330px;
+    height: 400px;
+    background-color: var(--white);
+    inset: 20% 40%;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.todo .add-todo {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo .add-todo .todo-text {
+    width: 80%;
+    height: 35%;
+    padding: 0 3px;
+    outline: none;
+    border: 1px solid var(--semi-black);
+}
+
+.todo .add-todo .bi {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    right: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--semi-black);
+    color: var(--white);
+}
+
+.todo .todo-list {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: var(--gray);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 3px;
+    height: 7px;
+    background-color: var(--semi-black);
+    border-radius: 50px;
+}
+
+.todo .todo-list ul {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    inset: 0 7%;
+    list-style: none;
+}
+
+.todo .todo-list ul li {
+    width: 100%;
+    height: 20%;
+    background-color: var(--gray);
+    margin: 5px;
+    line-height: 37px;
+    padding: 0 3px;
+    cursor: pointer;
+}
+
+.todo .todo-list ul li .bi-trash {
+    width: 25px;
+    height: 25px;
+    background-color: var(--semi-black);
+    color: var(--white);
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vmin;
+    right: 0;
+    cursor: pointer;
+    margin-top: -30px;
+}
+
+.todo .todo-option {
+    width: 81%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 9%;
+}
+
+.todo .todo-option .btn {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border-radius: 3px;
+    background-color: var(--semi-black);
+    cursor: pointer;
+}
